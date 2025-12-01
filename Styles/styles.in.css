@@ -1,0 +1,171 @@
+ * {
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: #FAFAF7;
+  color: #222222;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  background-color:  #1F2A44 ;
+  color: #FAFAF7;
+  padding: 5px;
+  margin-top: 0px;
+  top: 0;
+}
+
+body {
+  margin: 0;
+}
+
+.login {
+  margin: 10px;
+  background-color: #E3E7EF;
+  border-radius: 10px;
+  transition: 0.3s;
+  text-decoration: none;
+  color: #0a386c;
+  display: block;
+  width: fit-content;
+  padding: 5px 10px;
+  font-size: 20px;
+}
+
+.login:hover {
+  background: #0a386c;
+  color: #E3E7EF;
+}
+
+.login {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.login svg {
+  background: transparent;
+}
+
+.login:hover svg {
+  background: #0a386c;
+  color: #E3E7EF;
+}
+
+.search-bar {
+  display: inline-block;
+  margin: 10px 20px;
+  position: absolute;
+  top: 5px;
+  right: 100px;
+  background-color: transparent;
+  border: 3px solid #0a386c;
+  border-radius: 20px;
+}
+
+.search-bar form {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+}
+
+.search-bar input[type="text"] {
+  border: none;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 10px;
+  outline: none;
+  width: 200px;
+  background-color: none;
+  color: #222222;
+  width: 200px;
+  border-radius: 20px 0 0 20px;
+}
+
+.search-bar button {
+  background-color: transparent;
+  border: none;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-bar button svg {
+  background-color: transparent; 
+  color: #E3E7EF;
+  width: 20px;
+  height: 20px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #E3E7EF;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.menu-btn {
+  position: absolute;
+  color: #E3E7EF;
+  font-size: 24px ;
+  top: 15px;
+  left: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1100;
+  padding: 5px 10px;
+}
+
+.menu-btn svg {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+}
+
+.menu-btn:hover svg {
+  fill: #0a386c;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-list li {
+  margin: 15px 0;
+}
+
+.menu-list li a {
+  text-decoration: none;
+  color: #222222;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
